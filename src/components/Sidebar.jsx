@@ -4,6 +4,7 @@ import { links } from "../utils/constants";
 import { FaTimes } from "react-icons/fa";
 import CartButtons from "./CartButtons";
 import { useProductsContext } from "../context/products_context";
+import logo from "../assets/logo.svg"
 
 function Sidebar() {
   const { sideBarClose, isSidebarOpen } = useProductsContext();
@@ -17,7 +18,7 @@ function Sidebar() {
         <div className="cursor-pointer">
           <Link to="/">
             <img
-              src="/src/assets/logo.svg"
+              src={logo}
               alt="logo"
               className="w-48 ml-[-15px] "
             />

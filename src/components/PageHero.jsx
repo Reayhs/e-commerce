@@ -9,7 +9,13 @@ function PageHero({ title, product }) {
           <Link className="font-bold text-[#d7cfcf]" to="/">
             Home
           </Link>{" "}
-          / {product && "Product /"} {title}
+          /{" "}
+          {product && (
+            <Link className="font-bold text-[#d7cfcf]" to="/products">
+              Product /
+            </Link>
+          )}{" "}
+          {title}
         </h3>
       </div>
     </div>
