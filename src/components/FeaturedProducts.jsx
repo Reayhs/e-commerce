@@ -6,7 +6,7 @@ import Product from "./Product";
 
 function FeaturedProduct() {
   const {
-    featured_product: product,
+    featured_products: featured,
     product_loading: loading,
     product_error: error,
   } = useProductsContext();
@@ -18,11 +18,16 @@ function FeaturedProduct() {
   }
 
   return (
-    <div>
-      <h1>Featured Products</h1>
-      {featured.slice(0, 3).map((item) => (
-        <Product key={item.id} {...item} />
-      ))}
+    <div className="flex flex-col  px-20 lg:px-4 my-28">
+      <h1 className="text-center py-4">Featured Products</h1>
+      <div className="flex justify-between items-center">
+        {featured.slice(0, 3).map((item) => (
+          <Product key={item.id} {...item} />
+        ))}
+      </div>
+      <button className="bg-white border-[#171717] border text-[#171717]  w-48 mx-auto p-3 rounded-2xl hover:bg-[#171717] hover:text-white mt-2">
+        All Products
+      </button>
     </div>
   );
 }

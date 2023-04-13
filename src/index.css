@@ -203,3 +203,10 @@
     min-height: calc(100vh - (20vh + 10rem));
   }
   
+  .blabla:hover .link{
+   opacity: 1;
+  }
+
+  .blabla:hover img{
+    opacity: 0.55;
+  }
