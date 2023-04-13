@@ -1,6 +1,6 @@
 import React from "react";
-import { hero } from "../assets/hero-bcg.jpeg";
-import { hero2 } from "../assets/hero-bcg-2.jpeg";
+import  hero  from "../assets/hero-bcg.jpeg";
+import  hero2  from "../assets/hero-bcg-2.jpeg";
 
 function Hero() {
   return (
