@@ -9,7 +9,7 @@ function Sidebar() {
   const { sideBarClose, isSidebarOpen } = useProductsContext();
   if (isSidebarOpen) {
     return (
-      <div className="fixed top-0 left-0 h-full w-full bg-[#302d2d] pt-6 pl-10 hidden lg:block ">
+      <div className="fixed top-0 left-0 h-full w-full bg-[#302d2d] pt-6 pl-10 hidden lg:block z-20  ">
         <FaTimes
           className="absolute right-[20px] top-6 text-white text-3xl cursor-pointer"
           onClick={sideBarClose}
