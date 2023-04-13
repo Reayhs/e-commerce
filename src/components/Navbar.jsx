@@ -8,7 +8,7 @@ import { useProductsContext } from "../context/products_context";
 function Navbar() {
   const { sideBarOpen } = useProductsContext();
   return (
-    <nav className="flex justify-between items-center py-4 ">
+    <nav className="flex justify-between items-center py-4 px-20 lg:px-4 ">
       <div className="cursor-pointer">
         <Link to="/">
           <img src="/src/assets/logo.svg" alt="logo" className="w-48 ml-[-15px]" />
