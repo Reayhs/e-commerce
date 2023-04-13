@@ -17,7 +17,7 @@ const products_reducer = (state, action) => {
     case SIDEBAR_CLOSE:
       return { ...state, isSidebarOpen: false };
     case GET_PRODUCTS_BEGIN:
-      return { ...state, product_loading: true,};
+      return { ...state, product_loading: true };
     case GET_PRODUCTS_SUCCESS:
       const featured_products = action.payload.filter(
         (item) => item.featured === true
@@ -29,7 +29,7 @@ const products_reducer = (state, action) => {
         product_loading: false,
       };
     case GET_PRODUCTS_ERROR:
-      return { ...state, product_error: true, products_loading: false };
+      return { ...state, product_error: true, product_loading: false };
     default:
       return state;
   }
