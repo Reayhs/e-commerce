@@ -1,17 +1,31 @@
 import React from "react";
+import PageHero from "../components/PageHero";
+import logo from "../assets/hero-bcg.jpeg";
 
 function AboutPage() {
   return (
-    <div className="page-100  flex justify-center items-center flex-col text-center gap-20 px-20 lg:px-4 section-center">
-      <h1 className="text-5xl">About</h1>
-      <p className="text-white text-lg">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
-        repellendus corrupti nemo nostrum accusantium tenetur amet officia quos?
-        Nihil enim perferendis unde dolor. Unde dicta sunt perspiciatis, quidem,
-        dolor reiciendis voluptas ipsa et totam saepe accusamus placeat porro
-        quod amet!
-      </p>
-    </div>
+    <>
+      <PageHero title="About" />
+      <div className="page-100  flex justify-center  gap-20 px-20 lg:px-4 section-center lg:flex-col">
+        <div>
+          <img src={logo} alt="" />
+        </div>
+        <div>
+          <h1 className="text-5xl">Our Story</h1>
+          <p className="text-white text-lg max-w-[1500px] leading-9 mt-10">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+            repellendus corrupti nemo nostrum accusantium tenetur amet officia
+            quos? Nihil enim perferendis unde dolor. Unde dicta sunt
+            perspiciatis, quidem, dolor reiciendis voluptas ipsa et totam saepe
+            accusamus Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Enim, repellendus corrupti nemo nostrum accusantium tenetur amet
+            officia quos? Nihil enim perferendis unde dolor. Unde dicta sunt
+            perspiciatis, quidem, dolor reiciendis voluptas ipsa et totam saepe
+            accusamus
+          </p>
+        </div>
+      </div>
+    </>
   );
 }
 
