@@ -9,7 +9,7 @@ function Product({ image, name, price, id }) {
         <img
           src={image}
           alt={name}
-          className="w-[380px] h-[220px] rounded-2xl"
+          className="w-[380px] h-[220px] rounded-2xl lg:w-auto lg:h-auto"
         />
         <Link
           to={`/products/${id}`}
