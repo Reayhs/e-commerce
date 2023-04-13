@@ -1,9 +1,20 @@
-import React from 'react'
+import React from "react";
+import { FaPlus, FaMinus } from "react-icons/fa";
 
-function AmountButtons() {
+function AmountButtons({ increase, decrease, amount }) {
   return (
-    <div>AmountButtons</div>
-  )
+    <>
+      <div className="flex gap-3 items-center my-2">
+        <button type="button" className="" onClick={decrease}>
+          <FaMinus />
+        </button>
+        <h2 className="amount">{amount}</h2>
+        <button type="button" className="" onClick={increase}>
+          <FaPlus />
+        </button>
+      </div>
+    </>
+  );
 }
 
-export default AmountButtons
+export default AmountButtons;
