@@ -5,6 +5,7 @@ export default {
     screens: {
       lg2: { max: "1623px" },
       lg1: { max: "1323px" },
+      mg: { max: "1123px" },
       lg: { max: "1023px" },
       tl: { max: "723px" },
     },
