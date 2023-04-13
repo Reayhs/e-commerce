@@ -20,7 +20,7 @@ function FeaturedProduct() {
   return (
     <div className="flex flex-col  px-20 lg:px-4 my-28">
       <h1 className="text-center py-4">Featured Products</h1>
-      <div className="flex justify-between items-center lg:flex-col lg:justify-start ">
+      <div className="flex justify-center items-center lg:flex-col lg:justify-start ">
         {featured.slice(0, 3).map((item) => (
           <Product key={item.id} {...item} />
         ))}
