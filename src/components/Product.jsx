@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
+import { formatPrice } from "../utils/helpers";
 
 function Product({ image, name, price, id }) {
   return (
@@ -20,7 +21,7 @@ function Product({ image, name, price, id }) {
       </div>
       <div className="flex justify-between items-center py-4 ">
         <h5>{name}</h5>
-        <p className="text-white">{price}</p>
+        <p className="text-white">{formatPrice(price)}</p>
       </div>
     </div>
   );

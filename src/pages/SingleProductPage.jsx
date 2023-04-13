@@ -12,6 +12,7 @@ import {
 } from "../components";
 
 import { Link } from "react-router-dom";
+import { formatPrice } from "../utils/helpers";
 function SingleProductPage() {
   const { id } = useParams();
   const {
@@ -60,6 +61,7 @@ function SingleProductPage() {
             <span className="flex gap-2 my-4 items-center">
               <Stars stars={stars} /> ({`${reviews} customer reviews`})
             </span>
+            <h4 className="text-[#b38050]">{formatPrice(price)}</h4>
             <p className="text-white leading-8">{description}</p>
             <p className="text-white w-72 flex gap-20 capitalize">
               <span className="font-bold">SKU:</span>
