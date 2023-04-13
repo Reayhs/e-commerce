@@ -7,10 +7,12 @@ import Contact from "../components/Contact";
 function HomePage() {
   return (
     <>
-      <Hero />
-      <FeaturedProducts />
-      <Services />
-      <Contact />
+      <div className="section-center">
+        <Hero />
+        <FeaturedProducts />
+        <Services />
+        <Contact />
+      </div>
     </>
   );
 }

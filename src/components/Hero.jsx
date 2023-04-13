@@ -2,7 +2,7 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="px-20 lg:px-4 my-10 py-2 w-full mx-auto">
+    <div className=" my-10 py-2 ">
       <div className="flex justify-between mx-auto items-center gap-32 p-4  mg:flex-col mg:items-start mg:gap-">
       <div className="flex flex-col gap-4">
         <h2>

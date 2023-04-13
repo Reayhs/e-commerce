@@ -3,7 +3,7 @@ import { services } from "../utils/constants";
 
 function Services() {
   return (
-    <section className="my-20 bg-[#2d2b2b] py-4  px-20 lg:px-4">
+    <section className="my-20  py-4  ">
       <div className="flex justify-between items-center p-2 gap-2 my-4 lg1:flex-col lg1:justify-start lg1:items-start">
         <h2>
           Custom Furniture <br/> Built Only For You
