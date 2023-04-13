@@ -16,6 +16,20 @@ const products_reducer = (state, action) => {
       return { ...state, isSidebarOpen: true };
     case SIDEBAR_CLOSE:
       return { ...state, isSidebarOpen: false };
+    case GET_PRODUCTS_BEGIN:
+      return { ...state, product_loading: true,};
+    case GET_PRODUCTS_SUCCESS:
+      const featured_products = action.payload.filter(
+        (item) => item.featured === true
+      );
+      return {
+        ...state,
+        products: action.payload,
+        featured_products,
+        product_loading: false,
+      };
+    case GET_PRODUCTS_ERROR:
+      return { ...state, product_error: true, products_loading: false };
     default:
       return state;
   }
