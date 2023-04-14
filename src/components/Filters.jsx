@@ -75,7 +75,7 @@ function Filters() {
           </div>
         </div>
       </form>
-      <button className="btn">Clear Filtres</button>
+      <button className="btn">Clear Filters</button>
     </div>
   );
 }
