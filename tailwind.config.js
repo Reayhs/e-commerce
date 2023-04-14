@@ -7,6 +7,7 @@ export default {
       lg1: { max: "1323px" },
       mg: { max: "1123px" },
       lg: { max: "1023px" },
+      ml: { max: "850px" },
       tl: { max: "723px" },
     },
     extend: {},
