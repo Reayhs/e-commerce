@@ -5,7 +5,7 @@ import { formatPrice } from "../utils/helpers";
 
 function Product({ image, name, price, id }) {
   return (
-    <div className="p-4">
+    <div className="p-4 w-full">
       <div className="relative blabla">
         <img
           src={image}

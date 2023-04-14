@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import Product from "./Product";
 
-function GridView() {
+function GridView({ products }) {
   return (
-    <div>GridView</div>
-  )
+    <div className="grid grid-cols-3 lg:flex lg1:flex-wrap justify-start ">
+      {products.map((item) => (
+        <Product key={item.id} {...item} />
+      ))}
+    </div>
+  );
 }
 
-export default GridView
+export default GridView;
