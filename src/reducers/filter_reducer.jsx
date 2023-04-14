@@ -15,8 +15,8 @@ const filter_reducer = (state, action) => {
     case LOAD_PRODUCTS:
       return {
         ...state,
-        all_products: action.payload,
-        filtered_products: action.payload,
+        all_products: [...action.payload],
+        filtered_products: [...action.payload],
       };
     case SET_GRIDVIEW:
       return { ...state, grid_view: true };
