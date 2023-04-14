@@ -12,7 +12,7 @@ function PageHero({ title, product }) {
           /{" "}
           {product && (
             <Link className="font-bold text-[#d7cfcf]" to="/products">
-              Product /
+              Products /
             </Link>
           )}{" "}
           {title}
