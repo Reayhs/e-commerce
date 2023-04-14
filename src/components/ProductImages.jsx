@@ -8,7 +8,7 @@ function ProductImages({ images = [{ url: "" }] }) {
       <div className="flex  mt-6 gap-4 cursor-pointer ">
         {images.map((item, i) => (
           <img
-            className={`w-[94px] tl:w-14 rounded-lg ${main !== images[i] ? "opacity-25" : null}`}
+            className={`w-[74px] lg:w-[94px]  tl:w-14 rounded-lg ${main !== images[i] ? "opacity-25" : null}`}
             src={item.url}
             alt="img"
             onClick={() => setMain(images[i])}
