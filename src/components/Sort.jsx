@@ -7,25 +7,29 @@ function Sort() {
     useFilterContext();
   return (
     <>
-      <div className="flex justify-between items-center gap-4 p-4">
-        <div className="flex items-center">
-          <button
-            onClick={gridView}
-            className={` border p-1 ${grid_view && "bg-white text-black"}`}
-          >
-            <BsFillGridFill />
-          </button>
-          <button
-            className={` border p-1 ml-2 ${grid_view || "bg-white text-black"}`}
-            onClick={listView}
-          >
-            <BsList />
-          </button>
-          <p className="text-white font-bold mt-4 ml-4">
+      <div className="flex justify-between p-5 tl:p-0 items-center gap-4  tl:flex-col tl:items-start tl:mt-8">
+        <div className="flex items-center tl:flex-col tl:items-start">
+          <div>
+            <button
+              onClick={gridView}
+              className={` border p-1 ${grid_view && "bg-white text-black"}`}
+            >
+              <BsFillGridFill />
+            </button>
+            <button
+              className={` border p-1 ml-2 ${
+                grid_view || "bg-white text-black"
+              }`}
+              onClick={listView}
+            >
+              <BsList />
+            </button>
+          </div>
+          <p className="text-white font-bold mt-4 ml-4 tl:block tl:ml-0">
             {filtered_products.length} Products Found
           </p>
         </div>
-        <hr />
+        <hr className="font-bold tl:w-full" />
         <form className="">
           <label className="mr-3 font-bold" htmlFor="sort">
             Sort by

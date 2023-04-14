@@ -8,7 +8,7 @@ function ProductsPage() {
   return (
     <>
       <PageHero title="Products" />
-      <div className="section-center flex">
+      <div className="section-center flex tl:flex-col">
         <Filters />
         <div className="">
           <Sort />
