@@ -4,7 +4,7 @@ function ProductImages({ images = [{ url: "" }] }) {
   const [main, setMain] = useState(images[0]);
   return (
     <div className="">
-      <img src={main.url} alt="img" className="w-auto h-[400px] lg:h-[300px] lg1:w-full" />
+      <img src={main.url} alt="img" className="w-full  h-[400px] lg:h-full " />
       <div className="flex  mt-6 gap-4 cursor-pointer ">
         {images.map((item, i) => (
           <img
