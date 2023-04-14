@@ -19,11 +19,11 @@ function Hero() {
           <button className="bg-[#171717] p-2 w-48">SHOP NOW</button>
         </div>
         <div className="relative">
-          <img src={hero} alt="" className="w-96" />
+          <img src={hero} alt="" className="w-96 h-[500px] lg:h-auto rounded-2xl" />
           <img
             src={hero2}
             alt=""
-            className="w-80 absolute bottom-[-30px] left-[-100px] mg:hidden"
+            className="w-96 absolute bottom-[-30px] left-[-140px] mg:hidden rounded-2xl"
           />
         </div>
       </div>

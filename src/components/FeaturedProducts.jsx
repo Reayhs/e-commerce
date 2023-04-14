@@ -19,13 +19,13 @@ function FeaturedProduct() {
 
   return (
     <div className="flex flex-col my-28">
-      <h1 className="text-center py-4">Featured Products</h1>
+      <h1 className="text-center py-4 mt-6 lg:mt-0">Featured Products</h1>
       <div className="flex justify-center items-center lg:flex-col lg:justify-start ">
-        {featured.slice(0, 3).map((item) => (
+        {featured.slice(3, 6).map((item) => (
           <Product key={item.id} {...item} />
         ))}
       </div>
-      <button className="bg-white border-[#171717] border text-[#171717]  w-48 mx-auto p-3 rounded-2xl hover:bg-[#171717] hover:text-white mt-2">
+      <button className="bg-white border-[#171717] border text-[#171717]  w-60 mx-auto p-3 rounded-2xl hover:bg-[#171717] hover:text-white mt-2">
         All Products
       </button>
     </div>

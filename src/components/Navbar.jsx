@@ -4,19 +4,14 @@ import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import CartButtons from "./CartButtons";
 import { useProductsContext } from "../context/products_context";
-import logo from "../assets/logo.svg"
 
 function Navbar() {
   const { sideBarOpen } = useProductsContext();
   return (
-    <nav className="flex justify-between items-center py-4 section-center">
+    <nav className="flex justify-between items-center py-4 section-center ">
       <div className="cursor-pointer">
         <Link to="/">
-          <img
-            src={logo}
-            alt="logo"
-            className="w-48 ml-[-15px]"
-          />
+          <h3 className="font-bold">Com<span className="text-[#ac7555]">Eayhs</span></h3>
         </Link>
       </div>
       <button
