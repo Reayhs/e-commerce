@@ -1,6 +1,7 @@
 import React from "react";
-import  hero  from "../assets/hero-bcg.jpeg";
-import  hero2  from "../assets/hero-bcg-2.jpeg";
+import hero from "../assets/hero-bcg.jpeg";
+import hero2 from "../assets/hero-bcg-2.jpeg";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -16,10 +17,18 @@ function Hero() {
             aperiam odio ducimus, obcaecati libero et quia tempora excepturi
             quis alias?
           </p>
-          <button className="bg-[#171717] p-2 w-48">SHOP NOW</button>
+          <Link to="/products">
+            <button className="bg-[#171717] p-2 w-48 hover:bg-white hover:text-[#171717]">
+              SHOP NOW
+            </button>
+          </Link>
         </div>
         <div className="relative">
-          <img src={hero} alt="" className="w-96 h-[500px] lg:h-auto rounded-2xl" />
+          <img
+            src={hero}
+            alt=""
+            className="w-96 h-[500px] lg:h-auto rounded-2xl"
+          />
           <img
             src={hero2}
             alt=""
