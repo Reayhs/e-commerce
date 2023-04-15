@@ -26,7 +26,7 @@ function Filters() {
   console.log(categories);
 
   return (
-    <div className="mt-8 pr-4">
+    <div className="my-8 pr-4  ">
       <form onSubmit={(e) => e.preventDefault()}>
         <div className="mb-6">
           <input
