@@ -9,7 +9,7 @@ function Sort() {
     <>
       <div className="flex justify-between p-5 tl:p-0 items-center gap-4  tl:flex-col tl:items-start tl:mt-8">
         <div className="flex items-center tl:flex-col tl:items-start">
-          <div>
+          <div className="flex">
             <button
               onClick={gridView}
               className={` border p-1 ${grid_view && "bg-white text-black"}`}
@@ -25,11 +25,11 @@ function Sort() {
               <BsList />
             </button>
           </div>
-          <p className="text-white font-bold mt-4 ml-4 tl:block tl:ml-0">
-            {filtered_products.length} Products Found
+          <p className="text-white font-bold mt-4 ml-4 tl:block tl:ml-0 ">
+            <span>{filtered_products.length} </span> Products Found
           </p>
         </div>
-        <hr className="font-bold tl:w-full" />
+        <hr className="font-bold  w-[480px] lg1:w-full " />
         <form className="">
           <label className="mr-3 font-bold" htmlFor="sort">
             Sort by
