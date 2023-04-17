@@ -16,11 +16,6 @@ export const links = [
     text: "Products",
     url: "/products",
   },
-  {
-    id: 4,
-    text: "Checkout",
-    url: "/checkout",
-  },
 ];
 
 export const services = [
