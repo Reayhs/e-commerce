@@ -9,7 +9,6 @@ import {
   About,
   Cart,
   Error,
-  Checkout,
 } from "./pages";
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/products" element={<Products />} />
         <Route path="/products/:id" element={<SingleProduct />} />
-        <Route path="/checkout" element={<Checkout />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
