@@ -8,7 +8,7 @@
 
 <hr/>
 
-![Ekran görüntüsü 2023-04-17 173107](https://user-images.githubusercontent.com/104009655/232518314-010d76d7-e756-41fa-98d0-9da8f987d9c4.png)
+![Ekran görüntüsü 2023-04-17 173123](https://user-images.githubusercontent.com/104009655/232519812-9c5bfff0-4ce2-44dc-9a95-2043ba7b9431.png)
 
 <hr/>
 
