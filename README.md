@@ -12,10 +12,6 @@
 
 <hr/>
 
-![Ekran görüntüsü 2023-04-17 173123](https://user-images.githubusercontent.com/104009655/232518322-2cd8e1bc-b897-4e5c-b41f-b67f9decbeaf.png)
-
-<hr/>
-
 ![Ekran görüntüsü 2023-04-17 173142](https://user-images.githubusercontent.com/104009655/232518329-3d991e71-cb98-403b-a296-134e72e29f18.png)
 
 <hr/>
