@@ -1,6 +1,6 @@
 # e-commerce
 
-#This is an e-commerce application built using React, Context API, Reducer, Tailwind, Router, and Axios
+# This is an e-commerce application built using React, Context API, Reducer, Tailwind, Router, and Axios
 
 <hr/>
 
