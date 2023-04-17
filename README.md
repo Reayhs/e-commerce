@@ -1,4 +1,4 @@
-# e-commerce
+# ComEayhs
 
 # This is an e-commerce application built using React, Context API, Reducer, Tailwind, Router, and Axios
 
